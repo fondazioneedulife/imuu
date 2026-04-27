@@ -1,0 +1,27 @@
+name: Deploy della Documentazione
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica il codice
+        uses: actions/checkout@v4
+      
+      - name: Installa Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      
+      - name: Installa MkDocs e tema Material
+        run: pip install mkdocs-material
+      
+      - name: Compila e Pubblica
+        run: mkdocs gh-deploy --force
