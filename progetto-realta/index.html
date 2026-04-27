@@ -1,0 +1,1702 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Progetto Realtà - Documentazione Tecnica</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#progetto-groveo" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentazione Tecnica" class="md-header__button md-logo" aria-label="Documentazione Tecnica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentazione Tecnica
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Progetto Realtà
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentazione Tecnica" class="md-nav__button md-logo" aria-label="Documentazione Tecnica" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentazione Tecnica
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Progetto Realtà
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Progetto Realtà
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01-buyer-personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Buyer Personas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 · Buyer Personas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#persona-1-mario-il-pizzaiolo-imprenditore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persona #1 — Mario, il Pizzaiolo Imprenditore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persona-2-giulia-la-ristoratrice-ambiziosa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persona #2 — Giulia, la Ristoratrice Ambiziosa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persona-3-roberto-il-bar-manager-tecnico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persona #3 — Roberto, il Bar Manager Tecnico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-proposte-di-nome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Proposte di Nome
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-todo-list-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Todo List &amp; Roadmap
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03 · Todo List &amp; Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-0-fondamenta-settimane-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 0 — Fondamenta (Settimane 1–2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-1-mvp-core-settimane-36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 1 — MVP Core (Settimane 3–6)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-2-inventario-personale-settimane-710" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 2 — Inventario &amp; Personale (Settimane 7–10)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-3-go-to-market-settimane-1114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 3 — Go-to-Market (Settimane 11–14)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backlog-post-lancio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backlog — Post-lancio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-documentazione-di-progetto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Documentazione di Progetto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="04 · Documentazione di Progetto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diario-di-bordo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diario di Bordo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scadenze-milestone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scadenze &amp; Milestone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ruoli-del-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ruoli del Team
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05-requisiti-di-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Requisiti di Sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="05 · Requisiti di Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requisiti-funzionali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisiti Funzionali
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisiti-non-funzionali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisiti Non Funzionali
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06-architettura-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Architettura del Sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="06 · Architettura del Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flusso-logico-dei-dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flusso Logico dei Dati
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-sicurezza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 · Sicurezza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-script-pitch-deck-groveo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 · Script Pitch Deck — GroveO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12 · Script Pitch Deck — GroveO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduzione-problema-marco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduzione &amp; Problema (Marco)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-soluzione-edoardo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Target &amp; Soluzione (Edoardo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flusso-dati-robustezza-buffo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flusso Dati &amp; Robustezza (Buffo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-digital-marketing-linee-guida-presentazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13 · Digital Marketing — Linee Guida Presentazione
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13 · Digital Marketing — Linee Guida Presentazione">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#struttura-narrativa-consigliata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Struttura Narrativa Consigliata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regole-visive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regole Visive
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01-buyer-personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Buyer Personas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 · Buyer Personas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#persona-1-mario-il-pizzaiolo-imprenditore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persona #1 — Mario, il Pizzaiolo Imprenditore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persona-2-giulia-la-ristoratrice-ambiziosa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persona #2 — Giulia, la Ristoratrice Ambiziosa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persona-3-roberto-il-bar-manager-tecnico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persona #3 — Roberto, il Bar Manager Tecnico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-proposte-di-nome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Proposte di Nome
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-todo-list-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Todo List &amp; Roadmap
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03 · Todo List &amp; Roadmap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-0-fondamenta-settimane-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 0 — Fondamenta (Settimane 1–2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-1-mvp-core-settimane-36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 1 — MVP Core (Settimane 3–6)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-2-inventario-personale-settimane-710" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 2 — Inventario &amp; Personale (Settimane 7–10)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-3-go-to-market-settimane-1114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 3 — Go-to-Market (Settimane 11–14)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backlog-post-lancio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backlog — Post-lancio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-documentazione-di-progetto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Documentazione di Progetto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="04 · Documentazione di Progetto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diario-di-bordo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diario di Bordo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scadenze-milestone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scadenze &amp; Milestone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ruoli-del-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ruoli del Team
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05-requisiti-di-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Requisiti di Sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="05 · Requisiti di Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requisiti-funzionali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisiti Funzionali
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisiti-non-funzionali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisiti Non Funzionali
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06-architettura-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Architettura del Sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="06 · Architettura del Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flusso-logico-dei-dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flusso Logico dei Dati
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-sicurezza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 · Sicurezza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-script-pitch-deck-groveo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 · Script Pitch Deck — GroveO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12 · Script Pitch Deck — GroveO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduzione-problema-marco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduzione &amp; Problema (Marco)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-soluzione-edoardo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Target &amp; Soluzione (Edoardo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flusso-dati-robustezza-buffo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flusso Dati &amp; Robustezza (Buffo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-digital-marketing-linee-guida-presentazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13 · Digital Marketing — Linee Guida Presentazione
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13 · Digital Marketing — Linee Guida Presentazione">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#struttura-narrativa-consigliata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Struttura Narrativa Consigliata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regole-visive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regole Visive
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="progetto-groveo">🏠 PROGETTO — GroveO</h1>
+<p><strong>Il Gestionale per Ristoratori Italiani</strong></p>
+<blockquote>
+<p>Buyer Personas · Nomi Prodotto · Roadmap &amp; Todo List
+Versione 1.0 — Marzo 2025</p>
+</blockquote>
+<hr />
+<h2 id="01-buyer-personas">01 · Buyer Personas</h2>
+<p>Tre profili distinti che rappresentano il mercato target. Ognuno ha bisogni, freni e motivazioni differenti.</p>
+<h3 id="persona-1-mario-il-pizzaiolo-imprenditore">Persona #1 — Mario, il Pizzaiolo Imprenditore</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Età &amp; Ruolo</strong></td>
+<td>42 anni · Proprietario di pizzeria con 2 sedi in provincia di Napoli</td>
+</tr>
+<tr>
+<td><strong>Volume</strong></td>
+<td>60–90 coperti a sera, picco weekend. Asporto e delivery in crescita.</td>
+</tr>
+<tr>
+<td><strong>Situazione attuale</strong></td>
+<td>Registratore di cassa + WhatsApp per ordini. Excel per inventario. Nessun dato storico.</td>
+</tr>
+<tr>
+<td><strong>Obiettivo primario</strong></td>
+<td>Smettere di perdere comande e capire quali pizze rendono di più.</td>
+</tr>
+<tr>
+<td><strong>Freni all'acquisto</strong></td>
+<td>Paura del cambiamento, budget limitato, esperienza negativa con software precedente.</td>
+</tr>
+<tr>
+<td><strong>Trigger d'acquisto</strong></td>
+<td>Demo gratuita, nessun contratto, amico che mostra il sistema in diretta.</td>
+</tr>
+<tr>
+<td><strong>Canale</strong></td>
+<td>Facebook, passaparola, gruppi WhatsApp di categoria.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><em>"Quello che avevo prima non funzionava, ho speso 2.000€ e l'ho disinstallato dopo 3 mesi."</em></p>
+</blockquote>
+<hr />
+<h3 id="persona-2-giulia-la-ristoratrice-ambiziosa">Persona #2 — Giulia, la Ristoratrice Ambiziosa</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Età &amp; Ruolo</strong></td>
+<td>36 anni · Proprietaria di ristorante fusion a Milano, aperto 2 anni fa.</td>
+</tr>
+<tr>
+<td><strong>Volume</strong></td>
+<td>45 coperti, pranzo business + cena. Prenotazioni tramite TheFork e telefono.</td>
+</tr>
+<tr>
+<td><strong>Situazione attuale</strong></td>
+<td>TheFork + Square non integrati. Vuole un unico posto per tutto.</td>
+</tr>
+<tr>
+<td><strong>Obiettivo primario</strong></td>
+<td>Ridurre il tempo in amministrazione e capire i margini per piatto.</td>
+</tr>
+<tr>
+<td><strong>Freni all'acquisto</strong></td>
+<td>Vuole qualcosa di professionale. Teme supporto scarso post-vendita.</td>
+</tr>
+<tr>
+<td><strong>Trigger d'acquisto</strong></td>
+<td>Case study concreti, integrazione con tool esistenti, supporto chat veloce.</td>
+</tr>
+<tr>
+<td><strong>Canale</strong></td>
+<td>Instagram, LinkedIn, blog di settore, podcast per ristoratori.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><em>"Voglio qualcosa che cresce con me, non uno strumento che devo rimpiazzare tra un anno."</em></p>
+</blockquote>
+<hr />
+<h3 id="persona-3-roberto-il-bar-manager-tecnico">Persona #3 — Roberto, il Bar Manager Tecnico</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Età &amp; Ruolo</strong></td>
+<td>29 anni · Bar manager in locale di famiglia, Centro Italia.</td>
+</tr>
+<tr>
+<td><strong>Volume</strong></td>
+<td>Bar diurno + aperitivo serale. ~200 scontrini/giorno, 3 dipendenti.</td>
+</tr>
+<tr>
+<td><strong>Situazione attuale</strong></td>
+<td>È il più digitale della famiglia. Vuole il gestionale ma deve convincere il padre.</td>
+</tr>
+<tr>
+<td><strong>Obiettivo primario</strong></td>
+<td>Dimostrare che il sistema digitale porta risultati concreti e misurabili.</td>
+</tr>
+<tr>
+<td><strong>Freni all'acquisto</strong></td>
+<td>Non decide da solo. Prezzo visto come costo, non investimento.</td>
+</tr>
+<tr>
+<td><strong>Trigger d'acquisto</strong></td>
+<td>Calcolatore ROI interattivo, periodo di prova gratuito, report automatici.</td>
+</tr>
+<tr>
+<td><strong>Canale</strong></td>
+<td>YouTube, TikTok, Reddit/community tech, newsletter startup italiane.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><em>"Se riesco a mostrare a mio padre che risparmia 300€ al mese, lo convinco in 5 minuti."</em></p>
+</blockquote>
+<hr />
+<h2 id="02-proposte-di-nome">02 · Proposte di Nome</h2>
+<p>Nomi memorabili con numero simbolico integrato.</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tagline</th>
+<th>Numero Simbolico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tavolo80</strong></td>
+<td><em>"Il tuo ristorante. Finalmente in ordine."</em></td>
+<td>80% dei ristoranti italiani senza gestionale digitale</td>
+</tr>
+<tr>
+<td><strong>Locale360</strong></td>
+<td><em>"Gestisci ogni angolo del tuo locale."</em></td>
+<td>360° di visione completa sul business</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="03-todo-list-roadmap">03 · Todo List &amp; Roadmap</h2>
+<p>Legenda priorità: 🔴 Critica · 🟡 Alta · 🟢 Media</p>
+<h3 id="sprint-0-fondamenta-settimane-12">Sprint 0 — Fondamenta (Settimane 1–2)</h3>
+<table>
+<thead>
+<tr>
+<th>Priorità</th>
+<th>Task</th>
+<th>Descrizione</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔴</td>
+<td>Scegliere il nome</td>
+<td>Validare brand name con dominio + trademark check</td>
+<td>Founder</td>
+</tr>
+<tr>
+<td>🔴</td>
+<td>Repo GitHub</td>
+<td>Setup mono-repo, README, licenza MIT/AGPL</td>
+<td>Tech Lead</td>
+</tr>
+<tr>
+<td>🔴</td>
+<td>Stack tecnologico</td>
+<td>Definire stack (Next.js + Supabase? Rails?) e documentare</td>
+<td>Tech Lead</td>
+</tr>
+<tr>
+<td>🔴</td>
+<td>Landing page</td>
+<td>One-pager con value prop, waitlist e social proof</td>
+<td>Founder + Dev</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>Buyer personas doc</td>
+<td>Validare con 5 interviste a ristoratori</td>
+<td>Founder</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>Competitor analysis</td>
+<td>Deep dive su EasyPOS, Deliverect, GloriaFood, Tilby</td>
+<td>Founder</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sprint-1-mvp-core-settimane-36">Sprint 1 — MVP Core (Settimane 3–6)</h3>
+<table>
+<thead>
+<tr>
+<th>Priorità</th>
+<th>Task</th>
+<th>Descrizione</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔴</td>
+<td>Modulo Ordini</td>
+<td>Dashboard sala/asporto/delivery, tracking real-time</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🔴</td>
+<td>Gestione Menu</td>
+<td>CRUD piatti, categorie, prezzi, foto</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🔴</td>
+<td>Cassa POS base</td>
+<td>Scontrino, pagamento, chiusura giornata</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🔴</td>
+<td>Auth &amp; multiutente</td>
+<td>Ruoli: admin, cameriere, cuoco. Login sicuro.</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>KDS Cucina</td>
+<td>Schermo cucina con code comande e priorità</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>Split bill</td>
+<td>Divisione conto per coperto o prodotto</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🟢</td>
+<td>Modalità offline</td>
+<td>Funzionamento base senza internet (PWA + cache)</td>
+<td>Dev</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sprint-2-inventario-personale-settimane-710">Sprint 2 — Inventario &amp; Personale (Settimane 7–10)</h3>
+<table>
+<thead>
+<tr>
+<th>Priorità</th>
+<th>Task</th>
+<th>Descrizione</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔴</td>
+<td>Inventario predittivo</td>
+<td>Scalare ingredienti da ricette collegate a vendite</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🔴</td>
+<td>Alert scorte</td>
+<td>Notifiche push/email sotto soglia ingrediente</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>Turni personale</td>
+<td>Calendario turni, permessi, sync con picchi ordini</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>Costo per piatto</td>
+<td>Calcolo automatico food cost da ingredienti + ricette</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>Fornitori</td>
+<td>Rubrica fornitori, ordini automatici da inventario basso</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🟢</td>
+<td>Report mensile PDF</td>
+<td>Export automatico: coperti, revenue, food cost, errori</td>
+<td>Dev</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sprint-3-go-to-market-settimane-1114">Sprint 3 — Go-to-Market (Settimane 11–14)</h3>
+<table>
+<thead>
+<tr>
+<th>Priorità</th>
+<th>Task</th>
+<th>Descrizione</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔴</td>
+<td>Onboarding flow</td>
+<td>Setup guidato in 30 min: menu, tavoli, personale</td>
+<td>Product</td>
+</tr>
+<tr>
+<td>🔴</td>
+<td>Demo interattiva</td>
+<td>Demo pubblica su demo.nomeapp.it con dati fittizi</td>
+<td>Dev + Marketing</td>
+</tr>
+<tr>
+<td>🔴</td>
+<td>Documentazione</td>
+<td>Docs in italiano + video tutorial YouTube</td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>Pilota con 3 locali</td>
+<td>Onboarding manuale di 3 early adopter</td>
+<td>Founder</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>Calcolatore ROI</td>
+<td>Tool web: inserisci coperti → vedi risparmio</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>Integrazione TheFork</td>
+<td>Import prenotazioni via API</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>🟢</td>
+<td>Community Discord</td>
+<td>Spazio per ristoratori + sviluppatori open source</td>
+<td>Founder</td>
+</tr>
+<tr>
+<td>🟢</td>
+<td>Product Hunt launch</td>
+<td>Preparare asset, testo e upvote network</td>
+<td>Marketing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="backlog-post-lancio">Backlog — Post-lancio</h3>
+<table>
+<thead>
+<tr>
+<th>Priorità</th>
+<th>Task</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟡</td>
+<td>Multi-sede</td>
+<td>Gestione 2+ locali dallo stesso account admin</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>App mobile nativa</td>
+<td>iOS + Android per camerieri e cuochi</td>
+</tr>
+<tr>
+<td>🟡</td>
+<td>Integrazione delivery</td>
+<td>Glovo, Uber Eats, Just Eat — import ordini automatico</td>
+</tr>
+<tr>
+<td>🟢</td>
+<td>AI menu suggerimenti</td>
+<td>Suggerimenti basati su stagionalità + scorte</td>
+</tr>
+<tr>
+<td>🟢</td>
+<td>Fatturazione elettronica</td>
+<td>Export XML conforme SDI italiano</td>
+</tr>
+<tr>
+<td>🟢</td>
+<td>Programma fedeltà</td>
+<td>Punti, promo personalizzate, CRM clienti base</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="04-documentazione-di-progetto">04 · Documentazione di Progetto</h2>
+<h3 id="diario-di-bordo">Diario di Bordo</h3>
+<p><strong>05/03/2026</strong>
+- Inizio attività: definizione ruoli, responsabilità e competenze del team.
+- Ore 15 (Riccardo e Thomas): avvio server Debian 13 per lavoro collaborativo condiviso.
+- Gli altri componenti si documentano su <a href="https://www.odoo.com/it_IT">Odoo</a> e aggiornano i ruoli.
+- Obiettivo di fine giornata: setup server operativo e prima esplorazione della piattaforma.</p>
+<p><strong>12/03/2026</strong>
+- Creazione logo, nome funzionale e memorabile.
+- Creazione tema design della grafica Odoo.
+- Configurazione iniziale: il gestionale gira nel PC principale dell'azienda (rete WiFi stabile a carico del cliente).
+- Nome funzionale scelto: 🍝 <strong>Bigoli</strong> — funzionalità principale: <strong>PRENDERE ORDINAZIONI</strong>.</p>
+<hr />
+<h3 id="scadenze-milestone">Scadenze &amp; Milestone</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Tipo</th>
+<th>Output richiesto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>10 Aprile</strong></td>
+<td>Restituzione Interna</td>
+<td>MVP base (anche solo UI su Figma/Google Sites), flussi e idea</td>
+</tr>
+<tr>
+<td><strong>24 Aprile</strong></td>
+<td>Restituzione Allargata</td>
+<td>Presentazione a genitori e amici, formato espositivo</td>
+</tr>
+<tr>
+<td><strong>08 Maggio</strong></td>
+<td>Restituzione Esterna (Finale)</td>
+<td>Versione Alpha con funzionalità principali, presentazione ad aziende</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Consegna finale: 8 maggio</strong>
+- <code>08/05</code> = Prototipo "Iterato" / Versione Alpha
+- <code>24/04</code> = MVP presentato ai genitori
+- <code>10/04</code> = MVP (non alpha, non beta) — anche solo Figma con flussi grafici</p>
+</blockquote>
+<hr />
+<h3 id="ruoli-del-team">Ruoli del Team</h3>
+<ul>
+<li><strong>Project Manager:</strong> coordina (non decide da solo), delega i compiti, monitora l'avanzamento, fa da tramite con i docenti.</li>
+<li><strong>Responsabile Documentazione:</strong> scrive tutto, ragiona sulle tecnologie, tiene il diario di bordo dei processi e delle decisioni.</li>
+<li><strong>Presentazione finale:</strong> ogni membro parla con le proprie competenze tecniche specifiche.</li>
+</ul>
+<hr />
+<h2 id="05-requisiti-di-sistema">05 · Requisiti di Sistema</h2>
+<h3 id="requisiti-funzionali">Requisiti Funzionali</h3>
+<ul>
+<li><strong>Gestione PoS:</strong> sistema touch per sala, asporto e domicilio; scontrini e fatturazione elettronica integrata.</li>
+<li><strong>Sync Sala-Cucina:</strong> app mobile (tablet/smartphone) con invio diretto ai monitor KDS o stampanti di reparto.</li>
+<li><strong>Magazzino &amp; Inventario:</strong> scarico automatico ingredienti da distinte base piatti; alert scorte in esaurimento.</li>
+<li><strong>Prenotazioni &amp; Tavoli:</strong> mappa visiva del locale, turnazione tavoli, gestione caparre per eventi.</li>
+<li><strong>Menu &amp; Pricing:</strong> gestione centralizzata (stagionali, promozioni 2x1, happy hour) su tutti i locali.</li>
+</ul>
+<h3 id="requisiti-non-funzionali">Requisiti Non Funzionali</h3>
+<ul>
+<li><strong>Interfaccia intuitiva:</strong> curva di apprendimento minima, senza rallentare il servizio.</li>
+<li><strong>All-in-One:</strong> nessun software di terze parti, dati centralizzati in un unico database.</li>
+<li><strong>Cloud &amp; accessibilità:</strong> accessibile in tempo reale anche da remoto.</li>
+<li><strong>Business Intelligence:</strong> dashboard aggiornata in real-time (costi, ricavi per piatto, storico vendite).</li>
+<li><strong>Sicurezza &amp; GDPR:</strong> cifratura TLS in transito, RBAC per controllo accessi, protezione dati personali clienti.</li>
+</ul>
+<hr />
+<h2 id="06-architettura-del-sistema">06 · Architettura del Sistema</h2>
+<h3 id="flusso-logico-dei-dati">Flusso Logico dei Dati</h3>
+<p>graph TD
+  A[Cameriere/Tablet] -- Inserimento Ordine --&gt; B{Core Engine}
+  B -- Smistamento --&gt; C[Monitor Cucina/KDS]
+  B -- Smistamento --&gt; D[Stampante Bar]
+  C -- Notifica Pronto --&gt; A
+  B -- Aggiornamento Stato --&gt; E[Mappa Tavoli]
+  E -- Richiesta Conto --&gt; F[Modulo PoS]
+  F -- Chiusura Scontrino --&gt; G[Scarico Magazzino Automatico]
+  F -- Registrazione --&gt; H[Report Incassi Base]</p>
+<pre><code>
+**Livello 1 — Input (Front-end Operativo)**
+1. Il cliente prenota (web/telefono) → Modulo Prenotazioni
+2. Il cameriere prende l'ordine via tablet → App GroveO PoS Mobile
+
+**Livello 2 — Elaborazione (Mid-tier)**
+3. L'ordine viene diviso automaticamente: bevande al bar, cibo in cucina → KDS/Stampanti
+4. Il tavolo viene segnato come &quot;Occupato/In attesa&quot; sulla mappa digitale
+
+**Livello 3 — Automazione Back-end (Core ERP)**
+5. All'uscita del piatto: calcolo costo e scarico ingredienti → Modulo Magazzino
+6. Il cliente paga → Modulo PoS (chiusura scontrino)
+7. Il pagamento genera una registrazione → Modulo Contabilità
+
+**Livello 4 — Output &amp; Analisi (Management)**
+8. Dati serata (tempi, piatti, incasso, sprechi) → Dashboard/Analytics KPI
+
+---
+
+## 07 · Gantt — Timeline Implementazione
+
+Durata stimata per la transizione completa di 1 locale standard: **6 Settimane**
+
+| Settimana | Fase | Attività | Output/Milestone |
+|---|---|---|---|
+| **Sett. 1** | Setup IT &amp; Sicurezza | Server protetto, DB con backup/cifratura, deploy GroveO, test vulnerabilità | Server operativo e app online |
+| **Sett. 2** | Analisi &amp; Data Entry | Mappatura tavoli, inserimento menu, distinte base, inventario iniziale | Struttura creata e DB popolato |
+| **Sett. 3** | Configurazione Moduli | Setup PoS, Magazzino, HR turni, Contabilità base, definizione RBAC | Sistema lato software pronto |
+| **Sett. 4** | Hardware &amp; Integrazione | Installazione tablet, KDS, stampanti, stress test | Hardware di rete integrato |
+| **Sett. 5** | Formazione Personale | Training titolare (admin/dashboard) e dipendenti (comande, cassa, privacy) | Personale autonomo |
+| **Sett. 6** | Go-Live &amp; Supporto | Avvio produzione con presenza tecnica in loco | **Progetto Chiuso** |
+
+---
+
+## 08 · Sprint Planning (Agile Fast-Track)
+
+| Sprint | Focus | Priorità | Task Principali |
+|---|---|---|---|
+| **Sprint 1** | Backend &amp; Core Logics | Alta | Setup DB, API inserimento ordine, logica smistamento comande |
+| **Sprint 2** | Interfaccia Operativa | Alta | UI tablet (UX veloce), mappa tavoli, schermata KDS cucina |
+| **Sprint 3** | Chiusura &amp; Analisi | Media | Modulo pagamenti, scarico magazzino, dashboard KPI base |
+
+---
+
+## 09 · Funzionalità Core MVP
+
+1. **Presa Comande Rapida** — interfaccia touch con categorie e varianti (es. &quot;senza cipolla&quot;)
+2. **Mappa Tavoli Dinamica** — stati: Libero, Occupato, In attesa, Conto
+3. **Routing Ordini** — separazione automatica tra Cucina e Bar
+4. **Chiusura Transazione** — scontrino e pagamento (contanti/POS)
+5. **Scarico Ingredienti** — decurtazione automatica quantità ad ogni vendita
+
+---
+
+## 10 · Stack Tecnologico Consigliato
+
+| Layer | Tecnologia |
+|---|---|
+| **Frontend** | React o Flutter (fluidità su tablet) |
+| **Backend** | Node.js o Python (FastAPI) — real-time |
+| **Database** | PostgreSQL (consistenza dati finanziari) |
+| **Sicurezza** | JWT per sessioni + TLS per comunicazione tablet-server |
+| **Infrastruttura** | Docker per deploy rapido e scalabile |
+
+### Tabelle DB Fondamentali (Sprint 1)
+
+```sql
+tables   (id, status, current_order_id)
+products (id, name, price, department, stock_quantity)
+orders   (id, table_id, total, status, created_at)
+</code></pre>
+<hr />
+<h2 id="11-sicurezza">11 · Sicurezza</h2>
+<ol>
+<li><strong>Autenticazione:</strong> JWT con scadenza breve (es. 4 ore) prima di accedere alla Mappa Tavoli.</li>
+<li><strong>Comunicazione:</strong> tutte le richieste tablet → backend forzate su HTTPS (TLS 1.3).</li>
+<li><strong>Autorizzazione RBAC:</strong> il campo <code>department</code> nel payload JSON determina i permessi. Il barista non vede gli ordini della cucina.</li>
+<li><strong>Audit Log:</strong> ogni azione (ordine, modifica, annullamento, sconto) registrata nella tabella <code>audit_logs</code> in PostgreSQL.</li>
+</ol>
+<hr />
+<h2 id="12-script-pitch-deck-groveo">12 · Script Pitch Deck — GroveO</h2>
+<h3 id="introduzione-problema-marco">Introduzione &amp; Problema (Marco)</h3>
+<ul>
+<li><strong>Slide 1 — Copertina:</strong> <em>"Ciao a tutti. Presentiamo GroveO: il nostro gestionale per ristoranti progettato per essere naturale, connesso e vivo."</em></li>
+<li><strong>Slide 2 — Il Caos Attuale:</strong> <em>"Oggi il settore soffre di una vera 'frattura' operativa. Le casse sono isolate, non esiste controllo dei margini in real-time e la lentezza nelle comande causa stress e perdite costanti."</em></li>
+</ul>
+<h3 id="target-soluzione-edoardo">Target &amp; Soluzione (Edoardo)</h3>
+<ul>
+<li><strong>Slide 3 — I Nostri Clienti:</strong> Locali con flusso medio-alto: pizzerie, ristoranti, bar. Servono ordini veloci, meno errori sala-cucina e controllo costi materie prime.</li>
+<li><strong>Slide 4 — La Soluzione:</strong> <em>"GroveO ottimizza i tempi di servizio e riduce gli errori operativi. Sistema completamente connesso, scalabile dal singolo ristorante a catene multi-sede tramite moduli Odoo."</em></li>
+</ul>
+<h3 id="flusso-dati-robustezza-buffo">Flusso Dati &amp; Robustezza (Buffo)</h3>
+<ul>
+<li><strong>Slide 5 — Flusso Dati Real-Time:</strong> Il sistema ottimizza il dato in 3 fasi: inserimento touch immediato → routing automatico → analisi finale.</li>
+</ul>
+<hr />
+<h2 id="13-digital-marketing-linee-guida-presentazione">13 · Digital Marketing — Linee Guida Presentazione</h2>
+<h3 id="struttura-narrativa-consigliata">Struttura Narrativa Consigliata</h3>
+<ul>
+<li><strong>Persuasiva:</strong> Intro (chi/cosa) → Problema (bisogni) → Soluzione (prodotto) → Esecuzione (processo, timeline, budget, team) → Risultato (proiezione)</li>
+<li><strong>Esplicativa:</strong> Contesto → Chi/Cosa → Informazioni + dati → Conclusione (impatto)</li>
+</ul>
+<h3 id="regole-visive">Regole Visive</h3>
+<ul>
+<li>Usare <strong>infografiche e grafici</strong> al posto del testo denso</li>
+<li>Meno parole sulle slide → vengono raccontate a voce</li>
+<li>Parole chiave evidenziate, non frasi intere</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
